@@ -12,3 +12,7 @@ MERN admin module for managing patients, providers, departments, appointments, s
 The API runs on `http://localhost:5000` and the Vite client on `http://localhost:5173`.
 
 The first server start creates the admin account from `ADMIN_EMAIL` and `ADMIN_PASSWORD`. Change the development defaults before deploying.
+
+## Run without MongoDB
+
+For local demos, set `MOCK_DATA=true` in `server/.env`. The API then starts with in-memory dummy patients, providers, appointments, reports, notifications, and activity data. The demo credentials are `admin@example.com` / `ChangeMe123!`.
